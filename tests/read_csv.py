@@ -6,6 +6,7 @@ df = spark.read.option("delimiter", ",") \
     .option("quote", "\"") \
     .option("multiLine", True) \
     .option("escape", "\"") \
-    .csv("D:/deproject/pyspark_tests/raw_data/DataEngineer.csv", header=True, inferSchema=True)
+    .csv("D:/deproject/pyspark_tests/raw_data/DataEngineer.csv",  # change the file path to your own
+         header=True, inferSchema=True)
 
 df.show()
